@@ -1,4 +1,4 @@
-# Hotspot VPN Router – README 📡
+# VPN + Wifi Hotspot setup  – README 📡
 
 This script creates a Wi‑Fi hotspot on Linux and routes all traffic through an already‑established VPN connection.
 It is useful in mobile testing labs where your access is for example vpn restricted or as a VPN hotspot for TVs and other devices that have issues with VPN apps.
