@@ -1,7 +1,7 @@
 # Hotspot VPN Router – README 📡
 
 This script creates a Wi‑Fi hotspot on Linux and routes all traffic through an already‑established VPN connection.
-It is useful in mobile testing labs or as a VPN hotspot for TVs and other devices that have issues with VPN apps.
+It is useful in mobile testing labs where your access is for example vpn restricted or as a VPN hotspot for TVs and other devices that have issues with VPN apps.
 
 The script automatically:
 - detects the active external interface (e.g., eth0, wlan0, tun0),
@@ -41,14 +41,17 @@ Run the script:
 
 # How the Script Works 📝
 
-Detects active WAN interface (eth0, wlan0, wwan0, tun0, etc.).
-Flushes existing firewall rules. (Flushes All rules - in future it will reenable previous rules :D)
-Applies NAT/masquerade and forwarding rules.
-Starts hostapd and dnsmasq.
-Creates a Wi‑Fi network that routes traffic through the VPN IP.
+1. Detects active WAN interface (eth0, wlan0, wwan0, tun0, etc.).
+2. Flushes existing firewall rules. (Flushes All rules - in future it will reenable previous rules :D)
+3. Applies NAT/masquerade and forwarding rules.
+4. Starts hostapd and dnsmasq.
+5. Creates a Wi‑Fi network that routes traffic through the VPN IP.
 
 # Notes ⚠️
 **This is very 'aplha version', just to proof it works as expected.**
+
 Designed for lab and testing environments.
+
 Every device connected to this hotspot will appear online under your VPN’s public IP.
+
 Requires root permissions.
