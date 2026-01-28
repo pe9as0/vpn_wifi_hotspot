@@ -26,9 +26,13 @@ You must establish the VPN before running the script.
 You can use:
 - your VPN client GUI, or
 - OpenVPN:
+
 ```sudo openvpn --config your_config.ovpn```
+
 To verify your external IP (before and after connecting VPN):
+
 ```curl ifconfig.me```
+
 If your VPN creates a tunnel interface (e.g. OpenVPN/WireGuard), the script will automatically detect tun0 as the external WAN interface.
 
 # How to Use 🚀
